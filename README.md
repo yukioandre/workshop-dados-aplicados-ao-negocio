@@ -1,4 +1,4 @@
-# Datasets das Lives — Dados Aplicados ao Negócio
+# Datasets das Lives: Dados Aplicados ao Negócio
 
 Este repositório reúne os datasets utilizados nas lives do workshop **Dados Aplicados ao Negócio**, realizadas nos dias **01/06 e 02/06**.
 
