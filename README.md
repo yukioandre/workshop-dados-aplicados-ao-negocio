@@ -19,6 +19,35 @@ Neste case, podemos separar o problema em duas grandes frentes:
 
 Como os datasets disponíveis trazem informações cadastrais, dados de atendimento e faturamento mensal, o foco da análise será a frente de **experiência do cliente**. A competição pode ser uma hipótese relevante, mas não temos dados diretos sobre concorrentes neste material.
 
+
+## Issue tree do problema
+
+Antes de começar a análise, podemos organizar o problema de churn em uma **issue tree**. A ideia é separar o aumento de churn em grandes hipóteses e, depois, quebrar cada hipótese em causas mais específicas.
+
+```mermaid
+flowchart LR
+    A["1. Aumento de Churn"]
+
+    A --> B["1.1 Experiência do Cliente"]
+    A --> C["1.2 Competição"]
+
+    B --> B2["1.1.2 Uso e engajamento com os produtos"]
+    B --> B3["1.1.3 Adequação do produto ao perfil do cliente"]
+    B --> B4["1.1.4 Atendimento e suporte"]
+
+    C --> C1["1.2.1 Oferta de concorrentes"]
+    C --> C2["1.2.2 Percepção de preço"]
+
+    style B fill:#E8F7F2,stroke:#00A676,stroke-width:2px
+    style B2 fill:#E8F7F2,stroke:#00A676
+    style B3 fill:#E8F7F2,stroke:#00A676
+    style B4 fill:#E8F7F2,stroke:#00A676
+```
+
+Neste case, vamos priorizar a frente de **Experiência do Cliente**, porque é onde os datasets disponíveis permitem investigação direta. Temos informações sobre cadastro, produtos contratados, atendimentos, notas, canais, duração dos contatos e faturamento mensal.
+
+A frente de **Competição** continua sendo uma hipótese importante de negócio, mas não temos dados diretos sobre ofertas de concorrentes, cobertura regional da concorrência ou pesquisas de percepção de preço. Por isso, ela aparece na issue tree como uma hipótese relevante, mas fora do escopo principal da análise prática.
+
 ## Objetivo da análise
 
 O objetivo principal é investigar o churn em até 6 meses e identificar padrões que possam ajudar a empresa a tomar decisões práticas para reduzir cancelamentos.
